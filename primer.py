@@ -1,8 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
 
-cantidadPrestada=float(input("Digite la cantidad a prestar "))
-totalPago=cantidadPrestada*1.24
-primeras=totalPago*0.125
-finales=totalPago*0.05
-print("El valor de las cuotas especiales iniciales es de : $" + str(round(primeras)))
-print("El valor de las cuotas ordinarias finales es de : $" + str(round(finales)))
-print("El valor total a pagar es de : $" + str(round(totalPago)))
+This is a temporary script file.
+"""
+
+total=float(0)
+n=int(input("Digite el numero de llantas "))
+
+if n < 5  :
+    total=n*300
+    print("El total a pagar por llanta es : $300 ")
+elif n <= 10 :
+    total=n*250
+    print("El total a pagar por llanta es : $250")
+else :
+        total = n*200
+        print("El total a pagar por llanta es : $200")
+        
+print ("El total a pagar por las " + str(n) + "llantas compradas es : "+ "$"+ str(total))
+
